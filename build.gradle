@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'dev.langchain4j:langchain4j:1.10.0'
+    implementation 'dev.langchain4j:langchain4j-anthropic:1.10.0'
+}
+
+application {
+    mainClass = 'Main'
+}
